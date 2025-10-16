@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: Michroma, sans-serif;
+    background-color: rgb(120, 173, 197);
+    color: snow;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+section {
+    background-color: rgb(81, 146, 177);
+    border: 2px solid, rgb(184, 224, 253);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 10 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-weight: 100px;
+    margin-bottom: 20px;
+    color: rgb(214, 199, 130);
+}
+
+nav {
+    background-color: rgba(81, 146, 177);
+    border: 2px solid rgb(184, 224, 253);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: left;
+    font-family: Michroma, sans-serif;
+}
+
+ul,
+ol {
+    text-align: center;
+    margin: 10px 0 10px 20px;
+    padding: 0;
+}
+
+
+.michroma-regular {
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.michroma-bold {
+    font-family: "Michroma", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Unvisited */
+a:link {
+    color: rgb(255, 210, 7);
+}
+
+/* Visited */
+a:visited {
+    color: rgba(154, 255, 242, 0.589);
+}
