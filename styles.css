@@ -6,45 +6,106 @@
     padding: 0;
 }
 
-body {
-    text-align: center;
+body,
+main {
+    text-align: left;
     font-family: Michroma, sans-serif;
-    background-color: rgb(120, 173, 197);
-    color: snow;
+    background-color: rgb(233, 231, 238);
+    color: rgb(84, 68, 193);
     line-height: 1.6;
     padding: 20px;
+
 }
 
 section {
-    background-color: rgb(81, 146, 177);
-    border: 2px solid, rgb(184, 224, 253);
+    color: rgb(233, 231, 238);
+    background-color: rgb(20, 189, 133);
+    border: 2px solid, rgb(78, 224, 188);
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 10 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px rgba(0.2, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+
+hr {
+    color: rgb(84, 68, 193);
+    font-weight: 20px;
 }
 
 h1,
 h2 {
-    text-align: center;
-    font-weight: 100px;
+    text-align: left;
     margin-bottom: 20px;
-    color: rgb(214, 199, 130);
+    color: rgb(84, 68, 193);
 }
 
-nav {
-    background-color: rgba(81, 146, 177);
-    border: 2px solid rgb(184, 224, 253);
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 14px;
-    text-align: left;
-    font-family: Michroma, sans-serif;
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: rgb(20, 189, 133);
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 50px;
+    /* Place content 60px from the top */
+    text-align: center;
+    transition: 0.2s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav a {
+    padding: 4px 4px 4px 16px;
+    text-decoration: dashed;
+    font-size: 25px;
+    color: #818181;
+    display: flex;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: rgb(0, 255, 179);
+    font-weight: 800;
+    transition: .3s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 36px;
+    margin-left: 10px;
+    display: flex;
+    overflow-x: hidden;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+#menu a:hover {
+    color: rgb(0, 255, 179);
+    font-weight: 800;
+    transition: .3s;
 }
 
 ul,
 ol {
-    text-align: center;
+    /*justify-content: flex-start;*/
+    align-items: left;
+    flex-direction: column;
     margin: 10px 0 10px 20px;
     padding: 0;
 }
@@ -59,15 +120,51 @@ ol {
 .michroma-bold {
     font-family: "Michroma", sans-serif;
     font-weight: 700;
-    font-style: normal;
+    font-style: bold;
 }
 
 /* Unvisited */
 a:link {
-    color: rgb(255, 210, 7);
+    color: rgba(46, 243, 194, 0.897);
 }
 
 /* Visited */
 a:visited {
-    color: rgba(154, 255, 242, 0.589);
+    color: rgb(245, 8, 186);
+}
+
+html {
+    font-size: 100%;
+}
+
+/* 16px */
+
+h1 {
+    font-size: 5.652rem;
+    /* 90.4px */
+}
+
+h2 {
+    font-size: 3.997rem;
+    /* 64px */
+}
+
+h3 {
+    font-size: 2.827rem;
+    /* 45.28px */
+}
+
+h4 {
+    font-size: 1.999rem;
+    /* 32px */
+}
+
+h5 {
+    font-size: 1.414rem;
+    /* 22.56px */
+}
+
+small {
+    font-size: 0.707rem;
+    /* 11.36px */
 }

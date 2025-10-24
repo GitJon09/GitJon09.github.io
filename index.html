@@ -8,24 +8,62 @@
 </head>
 
 
-<nav>
-    <a href="fav-lists.html">Favorite Lists</a> | <a href="image-page.html">Funniest Images</a> | <a
-        href="tables.html">My Schedule</a> |
-    <a href="contact-survey.html">Give Feedback</a> | <a href="vacation.html">My Dream Vacation</a> |
-</nav>
+
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+
+
+
+<!--<nav>
+        <a href="fav-lists.html">Favorites List</a> 
+        <a href="image-page.html">Funniest Images</a>
+        <a href="tables.html">My Schedule</a>
+        <a href="contact-survey.html">Give Feedback</a>
+        <a href="vacation.html">My Dream Vacation</a>
+</nav>-->
+
 
 <body>
     <main>
-        <section>
-            <h2>Welcome <em><strong>to </strong></em>Jonathan's Page!</h2>
-            <h3>About Me:</h3>
-            <p>Bass/flute/keyboards player, I produce my own tunes!</p>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="fav-lists.html">Favorites List</a>
+            <hr />
+            <a href="image-page.html">Funniest Images</a>
+            <hr />
+            <a href="tables.html">My Schedule</a>
+            <hr />
+            <a href="contact-survey.html">Give Feedback</a>
+            <hr />
+            <a href="vacation.html">My Dream Vacation</a>
+            <hr />
+        </div>
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()">menu</span>
 
-            <h3>My Favorite Food:</h3>
-            <p>You can slurp it and savor every ingredient -
-                <strong>Ramen!</strong>
-            </p>
-        </section>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+
+        </script>
+
+
+
+        <h2>Welcome <br />to<br /><em>Jonathan's Page!</em></h2>
+
+        <h3>About Me:</h3>
+        <p>Bass/flute/keyboards player, I produce my own tunes!</p>
+
+        <h3>My Favorite Food:</h3>
+        <p>You can slurp it and savor every ingredient -
+            <strong>Ramen!</strong>
+        </p>
+
     </main>
 </body>
 
