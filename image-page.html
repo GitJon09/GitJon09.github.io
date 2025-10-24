@@ -5,7 +5,38 @@
     <title>Images Page</title>
 </head>
 
+<section onclick="openNav()">menu</section>
+
 <body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="fav-lists.html">Favorites List</a>
+        <hr />
+        <a href="image-page.html">Funniest Images</a>
+        <hr />
+        <a href="tables.html">My Schedule</a>
+        <hr />
+        <a href="contact-survey.html">Give Feedback</a>
+        <hr />
+        <a href="vacation.html">My Dream Vacation</a>
+        <hr />
+        <a href="index.html">Home</a>
+        <hr />
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+
+
     <h1>Me when</h1>
 
     <img src="images\GAME OVER_EDITED.png" alt="Dead guy on a refrigerator" width="600" height="800" />

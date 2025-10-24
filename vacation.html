@@ -7,30 +7,64 @@
         My Dream Vacation
     </title>
 </head>
+<section onclick="openNav()">menu</section>
 <heading>
-    <h1>Treat yourself to...<br /><em>-Fukuoka-</em></h1>
+    <h2>Treat yourself to...</h2><br />
+    <h1><em>-Fukuoka-</em></h1>
 </heading>
 
-<p>
-<h4><ins>A city beyond the standards...</ins></h4><br />
-Treat yourself to famously-good food, a hello kitty bullet train, and Canal City Hakata, the city within a city!</p>
-<hr />
+
+<h5><ins>A city beyond the standards...</ins></h5><br />
+
 
 <body>
-    <img src="images/hello-kitty-shinkansen.PNG" alt="inside of hello kitty bullet train" width="400" height="500" />
-    <footer> The Hello Kitty Shinkansen takes you from Osaka to Fukuoka!</footer>
-    <br />
-    <img src="images/Canal_city_hakata.PNG" alt="Fukuoka's Canal City in Hakata" width="850" height="550" />
-    <footer>Fukuoka's largest and most eye-catching shopping center - Canal City Hakata</footer>
-    <br /><br />
-    <img src="images/yatai.jpg" alt="Yatai street food scene in fukuoka" width="400" height="250" />
-    <br />
-    <hr />
-    <video src="videos/fukuoka-walkwithme.mp4" controls loop>
-        </p>
-    </video>
-    <p>A short walking tour of Fukuoka's city streets
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="fav-lists.html">Favorites List</a>
         <hr />
+        <a href="image-page.html">Funniest Images</a>
+        <hr />
+        <a href="tables.html">My Schedule</a>
+        <hr />
+        <a href="contact-survey.html">Give Feedback</a>
+        <hr />
+        <a href="vacation.html">My Dream Vacation</a>
+        <hr />
+        <a href="index.html">Home</a>
+        <hr />
+    </div>
+    <!-- Use any element to open the sidenav -->
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+
+    <p>Treat yourself to famously-good food, a hello kitty bullet train, and Canal City Hakata, the city within a city!
+    </p>
+    <br />
+    <section><img src="images/hello-kitty-shinkansen.PNG" alt="inside of hello kitty bullet train" width="400"
+            height="500" />
+        <footer> The Hello Kitty Shinkansen takes you from Osaka to Fukuoka!</footer>
+        <br />
+        <img src="images/Canal_city_hakata.PNG" alt="Fukuoka's Canal City in Hakata" width="600" height="400" />
+        <p>Fukuoka's largest and most eye-catching shopping center - Canal City Hakata!</p>
+    </section>
+    <br /><br />
+    <section><img src="images/yatai.jpg" alt="Yatai street food scene in fukuoka" width="400" height="250" />
+        <p>Pictured here, is the street food capital of Fukuoka - Hakata.</p>
+        <br />
+        <video src="videos/fukuoka-walkwithme.mp4" controls loop>
+        </video>
+        <p>A short walking tour of Fukuoka's city streets</p>
+    </section>
     <h3>Looking to visit? Don't get lost!</h3>
     <p>Directions to Canal City Shopping Center:</p>
     <iframe

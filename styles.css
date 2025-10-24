@@ -14,7 +14,6 @@ main {
     color: rgb(84, 68, 193);
     line-height: 1.6;
     padding: 20px;
-
 }
 
 section {
@@ -24,8 +23,8 @@ section {
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 0 30px rgba(0.2, 0, 0, 0.2);
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: fit-content;
+    margin: 20px;
 
 }
 
@@ -35,9 +34,17 @@ hr {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     text-align: left;
     margin-bottom: 20px;
+    color: rgb(84, 68, 193);
+}
+
+h4,
+h5,
+h6 {
+    text-align: center;
     color: rgb(84, 68, 193);
 }
 
@@ -95,7 +102,7 @@ h2 {
     padding: 20px;
 }
 
-#menu a:hover {
+#menu section:hover {
     color: rgb(0, 255, 179);
     font-weight: 800;
     transition: .3s;
@@ -150,7 +157,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2.827rem;
+    font-size: 2.5rem;
     /* 45.28px */
 }
 
