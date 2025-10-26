@@ -16,17 +16,41 @@ main {
     padding: 20px;
 }
 
+div {
+    background-color: rgb(217, 211, 235);
+    margin: 0px;
+    padding-top: 20px;
+    /*padding-left: 20px;
+    padding-right: 20px;*/
+    transition: .2s ease-in;
+}
+
 section {
     color: rgb(233, 231, 238);
     background-color: rgb(20, 189, 133);
     border: 2px solid, rgb(78, 224, 188);
-    border-radius: 8px;
+    border-radius: 28px;
     padding: 20px;
     box-shadow: 0 0 30px rgba(0.2, 0, 0, 0.2);
     max-width: fit-content;
     margin: 20px;
 
 }
+
+input,
+select,
+textarea {
+    background-color: rgb(233, 231, 238);
+    color: rgb(245, 8, 186);
+    border-radius: 28px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0.2, 0, 0, 0.2);
+    max-width: fit-content;
+    max-height: fit-content;
+    margin: 20px;
+    transition: .2s;
+}
+
 
 hr {
     color: rgb(84, 68, 193);
@@ -39,13 +63,14 @@ h3 {
     text-align: left;
     margin-bottom: 20px;
     color: rgb(84, 68, 193);
+    position: sticky;
 }
 
 h4,
 h5,
 h6 {
     text-align: center;
-    color: rgb(84, 68, 193);
+    color: rgb(245, 8, 186);
 }
 
 .sidenav {
@@ -78,7 +103,7 @@ h6 {
     font-size: 25px;
     color: #818181;
     display: flex;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .sidenav a:hover {
@@ -102,10 +127,11 @@ h6 {
     padding: 20px;
 }
 
-#menu section:hover {
+section:hover {
     color: rgb(0, 255, 179);
     font-weight: 800;
     transition: .3s;
+
 }
 
 ul,
@@ -174,4 +200,100 @@ h5 {
 small {
     font-size: 0.707rem;
     /* 11.36px */
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: sticky;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(84, 68, 193);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }

@@ -9,8 +9,8 @@
 </head>
 <section onclick="openNav()">menu</section>
 <heading>
-    <h2>Treat yourself to...</h2><br />
-    <h1><em>-Fukuoka-</em></h1>
+    <div><h2>Treat yourself to...</h2><br />
+    <h1><em>-Fukuoka-</em></h1></div>
 </heading>
 
 
@@ -44,27 +44,48 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
-
     </script>
+
+
 
     <p>Treat yourself to famously-good food, a hello kitty bullet train, and Canal City Hakata, the city within a city!
     </p>
     <br />
-    <section><img src="images/hello-kitty-shinkansen.PNG" alt="inside of hello kitty bullet train" width="400"
-            height="500" />
-        <footer> The Hello Kitty Shinkansen takes you from Osaka to Fukuoka!</footer>
-        <br />
-        <img src="images/Canal_city_hakata.PNG" alt="Fukuoka's Canal City in Hakata" width="600" height="400" />
-        <p>Fukuoka's largest and most eye-catching shopping center - Canal City Hakata!</p>
-    </section>
-    <br /><br />
-    <section><img src="images/yatai.jpg" alt="Yatai street food scene in fukuoka" width="400" height="250" />
-        <p>Pictured here, is the street food capital of Fukuoka - Hakata.</p>
-        <br />
+
+    <div class="mySlides fade">
+        <div class="numbertext">1/4</div>
+        <img src="images/hello-kitty-shinkansen.PNG" alt="inside of hello kitty bullet train" width="500"
+            height="400" />
+        <section class="text"> The Hello Kitty Shinkansen takes you from Osaka to Fukuoka!</section>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">2/4</div>
+        <img src="images/Canal_city_hakata.PNG" alt="Fukuoka's Canal City in Hakata" width="500" height="400" />
+        <section class="text">Fukuoka's largest and most eye-catching shopping center - Canal City Hakata!</section>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">3/4</div>
+        <img src="images/yatai.jpg" alt="Yatai street food scene in fukuoka" width="500" height="400" />
+        <section class="text">Pictured here, is the yatai street food scene in Hakata city.</section>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">4/4</div>
         <video src="videos/fukuoka-walkwithme.mp4" controls loop>
         </video>
-        <p>A short walking tour of Fukuoka's city streets</p>
-    </section>
+        <section class="text">A short walking tour of Fukuoka's city streets</section>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentslide(4)"></span>
+    </div>
     <h3>Looking to visit? Don't get lost!</h3>
     <p>Directions to Canal City Shopping Center:</p>
     <iframe
@@ -76,8 +97,38 @@
         src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3323.611684710462!2d130.41845042095164!3d33.58943016736398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shello%20kitty%20shinkansen!5e0!3m2!1sen!2sus!4v1759256943710!5m2!1sen!2sus"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <hr />
+
+
 </body>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
 
 <p>Go back <a href="index.html">home</a>?</p>
 
