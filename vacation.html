@@ -9,8 +9,8 @@
 </head>
 <section onclick="openNav()">menu</section>
 <heading>
-    <div><h2>Treat yourself to...</h2><br />
-    <h1><em>-Fukuoka-</em></h1></div>
+    <h2>Treat yourself to...</h2><br />
+    <h1><em>-Fukuoka-</em></h1>
 </heading>
 
 
@@ -18,7 +18,7 @@
 
 
 <body>
-    <div id="mySidenav" class="sidenav">
+    <span id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="fav-lists.html">Favorites List</a>
         <hr />
@@ -30,9 +30,11 @@
         <hr />
         <a href="vacation.html">My Dream Vacation</a>
         <hr />
+        <a href="Wishlist.html">My Wishlist</a>
+        <hr />
         <a href="index.html">Home</a>
         <hr />
-    </div>
+    </span>
     <!-- Use any element to open the sidenav -->
 
 
@@ -60,7 +62,8 @@
     </div>
     <div class="mySlides fade">
         <div class="numbertext">2/4</div>
-        <img src="images/Canal_city_hakata.PNG" alt="Fukuoka's Canal City in Hakata" width="500" height="400" />
+        <img style="align: center" src="images/Canal_city_hakata.PNG" alt="Fukuoka's Canal City in Hakata" width="500"
+            height="400" />
         <section class="text">Fukuoka's largest and most eye-catching shopping center - Canal City Hakata!</section>
     </div>
     <div class="mySlides fade">
@@ -77,14 +80,12 @@
     <a class="prev" onclick="plusSlides(-1)">❮</a>
     <a class="next" onclick="plusSlides(1)">❯</a>
 
-    </div>
-    <br>
-
     <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentslide(4)"></span>
+    </div>
     </div>
     <h3>Looking to visit? Don't get lost!</h3>
     <p>Directions to Canal City Shopping Center:</p>

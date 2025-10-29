@@ -10,7 +10,7 @@
 <section onclick="openNav()">menu</section>
 
 <body>
-    <div id="mySidenav" class="sidenav">
+    <span id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="fav-lists.html">Favorites List</a>
         <hr />
@@ -22,9 +22,11 @@
         <hr />
         <a href="vacation.html">My Dream Vacation</a>
         <hr />
+        <a href="Wishlist.html">My Wishlist</a>
+        <hr />
         <a href="index.html">Home</a>
         <hr />
-    </div>
+    </span>
 
     <script>
         function openNav() {
@@ -41,14 +43,15 @@
         <p>
         <h1>Hey there, traveller!</h1>
         <h4>Give me your information now!</h4>
-        <section>
-            Full Name:
-            <input type="text" name="Full name" size="15" maxlength="30" />
-            </p>
-            <p>Email:
-                <input type="text" name="email" size="19" maxlength="30" />
-            </p>
-        </section>
+        <div>
+            <section>
+                Full Name:
+                <input type="text" name="Full name" size="15" maxlength="30" />
+                </p>
+                <p>Email:
+                    <input type="text" name="email" size="19" maxlength="30" />
+                </p>
+            </section>
     </form>
 
     <form action="contact-survey.html" method="GET">
@@ -73,26 +76,25 @@
     <form action="contact-survey.html" method="GET">
         <input type="submit" />
     </form>
-
+    </div>
     </br>
     <hr />
     <h1>Survey time!</h1>
     </p>
     <form action="contact-survey.html" method="GET">
-        <p>
-        <h5>1. How'd you find my site?</h5>
-        </p>
-        <select name="subject">
-            <option value="Word of mouth">Word of mouth</option>
-            <option value="Stalking u">Stalking u</option>
-            <option value="Ads">Ads</option>
-            <option value="Other">Other</option>
-        </select>
-    </form>
+        <div>
+            <h4>1. How'd you find my site?</h4>
 
+            <select name="subject">
+                <option value="Word of mouth">Word of mouth</option>
+                <option value="Stalking u">Stalking u</option>
+                <option value="Ads">Ads</option>
+                <option value="Other">Other</option>
+            </select>
+    </form>
     <form action="contact-survey.html" method="GET">
         <p>
-        <h5>2. On a scale of 1-10 What do you rate the site? (Carefully answer this.)</h5>
+        <h4>2. On a scale of 1-10 What do you rate the site? (Carefully answer this.)</h4>
         </p>
         <section>
             <input type="radio" value="10">10</input><br />
@@ -112,7 +114,7 @@
     <form action="contact-survey.html" method="GET">
         <input type="submit" />
     </form>
-
+    </div>
     <p>Or you know what, just, go <a href="index.html">home</a>...</p>
 </body>
 
