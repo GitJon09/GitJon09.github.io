@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-
-<link href="styles.css" rel="stylesheet" />
-
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Wishlist</title>
+    <link href="styles.css" rel="stylesheet" />
 </head>
-<section onclick="openNav()">menu</section>
 
-<main>
+<body>
     <heading>
+        <section onclick="openNav()">menu</section>
         <h2>My Wishlist</h2>
         <h5>Some really cooooooool stuff I want (and certainly do not need)</h5>
     </heading>
 
-    <span id="mySidenav" class="sidenav">
+    <aside id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="fav-lists.html">Favorites List</a>
         <hr />
@@ -31,10 +31,9 @@
         <hr />
         <a href="index.html">Home</a>
         <hr />
-    </span>
+    </aside>
+
     <!-- Use any element to open the sidenav -->
-
-
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
@@ -45,7 +44,7 @@
         }
     </script>
 
-    <body>
+    <main>
         <div>
             <section>
                 <img src="images/subaru.png" alt="2002 subaru impreza" width="200" length="200" />
@@ -60,7 +59,7 @@
             <section>
                 <img src="images/framework.png" alt="framework laptop 16" width="200" length="200" />
                 <br />
-                 <footer>A framework laptop 16 - Bringing back modular tech.</footer>
+                <footer>A framework laptop 16 - Bringing back modular tech.</footer>
             </section>
             <section>
                 <img src="images/tissot.png" alt="tissot powermatic 80" width="200" length="200" />
@@ -78,7 +77,7 @@
                 A Yamaha cp70 - A sound that takes you back.
             </section>
         </div>
-    </body>
-</main>
+    </main>
+</body>
 
 </html>
