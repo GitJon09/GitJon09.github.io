@@ -8,43 +8,45 @@
     <link href="styles.css" rel="stylesheet" />
 </head>
 
-<body>
-    <heading>
-        <section onclick="openNav()">menu</section>
-        <h2>My Wishlist</h2>
-        <h5>Some really cooooooool stuff I want (and certainly do not need)</h5>
-    </heading>
+<main>
 
-    <aside id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="fav-lists.html">Favorites List</a>
-        <hr />
-        <a href="image-page.html">Funniest Images</a>
-        <hr />
-        <a href="tables.html">My Schedule</a>
-        <hr />
-        <a href="contact-survey.html">Give Feedback</a>
-        <hr />
-        <a href="vacation.html">My Dream Vacation</a>
-        <hr />
-        <a href="Wishlist.html">My Wishlist</a>
-        <hr />
-        <a href="index.html">Home</a>
-        <hr />
-    </aside>
+    <body>
+        <heading>
+            <section onclick="openNav()">menu</section>
+            <h2>My Wishlist</h2>
+            <h5>Some really cooooooool stuff I want (and certainly do not need)</h5>
+        </heading>
 
-    <!-- Use any element to open the sidenav -->
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
+        <aside id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="fav-lists.html">Favorites List</a>
+            <hr />
+            <a href="image-page.html">Funniest Images</a>
+            <hr />
+            <a href="tables.html">My Schedule</a>
+            <hr />
+            <a href="contact-survey.html">Give Feedback</a>
+            <hr />
+            <a href="vacation.html">My Dream Vacation</a>
+            <hr />
+            <a href="Wishlist.html">My Wishlist</a>
+            <hr />
+            <a href="index.html">Home</a>
+            <hr />
+        </aside>
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
+        <!-- Use any element to open the sidenav -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
 
-    <main>
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+
         <div>
             <section>
                 <img src="images/subaru.png" alt="2002 subaru impreza" width="200" length="200" />
@@ -77,7 +79,8 @@
                 A Yamaha cp70 - A sound that takes you back.
             </section>
         </div>
-    </main>
-</body>
+
+    </body>
+</main>
 
 </html>
