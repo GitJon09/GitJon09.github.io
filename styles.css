@@ -28,7 +28,7 @@ div {
     box-shadow: rgba(76, 12, 224, 0.582) 0 1px 6px;
     border-radius: 16px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 section {
@@ -94,24 +94,25 @@ h6 {
     /* Stay in place */
     display: flex;
     flex-direction: column;
+    text-align: center;
     z-index: 1;
     /* Stay on top */
     top: 0;
     /* Stay at the top */
     left: 0;
     background-color: rgb(20, 189, 133);
+    border: 2px solid, rgb(78, 224, 188);
     overflow-x: hidden;
     /* Disable horizontal scroll */
     padding-top: 50px;
     /* Place content 60px from the top */
-    text-align: center;
     transition: 0.2s;
     /* 0.5 second transition effect to slide in the sidenav */
 }
 
 .sidenav a {
     padding: 4px 4px 4px 16px;
-    text-decoration: dashed;
+    text-decoration: wavy;
     font-size: 25px;
     color: #818181;
     display: flex;
@@ -129,7 +130,7 @@ h6 {
     top: 0;
     left: 10px;
     font-size: 36px;
-    margin-left: 10px;
+    margin-left: 150px;
     display: flex;
     overflow-x: hidden;
 }
