@@ -16,7 +16,7 @@ body {
 }
 
 
-div {
+#desc {
     background-color: rgb(217, 211, 235);
     margin: 10px;
     padding-left: 20px;
@@ -44,7 +44,8 @@ section {
 section:hover {
     color: rgb(0, 255, 179);
     font-weight: 800;
-    transition: .3s;
+    padding: 30px;
+    transition: .2s;
 }
 
 input,
@@ -207,6 +208,24 @@ small {
     /* 11.36px */
 }
 
+.menubtn {
+    font-family: Michroma;
+    color: rgb(233, 231, 238);
+    background-color: rgb(20, 189, 133);
+    border: 2px solid, rgb(78, 224, 188);
+    border-radius: 28px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, .4) 0 0 30px;
+    max-width: fit-content;
+    margin: 20px;
+}
+
+.menubtn:hover {
+    padding: 10px;
+    background-color: rgb(0, 255, 179);
+    transition: .2s;
+}
+
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
@@ -302,4 +321,8 @@ small {
     to {
         opacity: 1
     }
+}
+/*phone mdeia res*/
+@media (max-width: 960px) {
+
 }
