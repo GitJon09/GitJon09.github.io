@@ -5,7 +5,7 @@
 
 <head>
     <title>Contact Forms</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
     <link href="styles.css" rel="stylesheet" />
 </head>
 
@@ -57,7 +57,7 @@
     </form>
     <form action="contact-survey.html" method="GET">
         <p><strong>What is the subject of today's input?</strong></p>
-        <select name="subject">
+        <select id="selection" name="subject">
             <option value="General Inquiry">General Inquiry</option>
             <option value="Complaint">Complaint</option>
             <option value="Give u money <3">Give u money <3 </option>
@@ -83,7 +83,7 @@
     <h1>Survey time!</h1>
     </p>
     <form action="contact-survey.html" method="GET">
-        <div>
+        <div id="desc">
 
             <h5>1. How'd you find my site?</h5>
             <select name="subject">
