@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>HCTRA Homepage Recreation</title>
+    <link rel="stylesheet" href="eztag-styles.css">
+</head>
+
+<header>
+
+    <div display="flex" align-items="center" justify-content="space-around">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+        <a href="javascript:void(0)" class="menubtn" onclick="openNav()"><img src="images/menubtn.JPG" /></a>
+        <span id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <a id="page">Login</a>
+            <hr />
+            <a id="page">Sign Up for EZ TAG</a>
+            <hr />
+            <a id="page">Pay Tools & Invoices</a>
+            <hr />
+            <a id="page">Payment Plans</a>
+            <hr />
+            <a id="page">Tag Installation Instructions</a>
+            <hr />
+            <a id="page">Business Opportunities</a>
+            <hr />
+            <a id="page">Transparency & Reports</a>
+        </span>
+        <img id="eztag-logo" src="images/eztag.png" width="175" height="55" />
+        <nav id="navbar">
+            <a>SIGN UP</a>
+            <a>PAY TOLLS & INVOICES</a>
+            <a>CAREERS</a>
+            <a>TRANSPARENCY & REPORTS</a>
+            <a>Login</a>
+        </nav>
+    </div>
+</header>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "25vw";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+</script>
+
+<body>
+    <div class="slideshow-container">
+        <div class="mySlides slide">
+            <img id="slides" src="images/HCTRA_Slider_Phishing_Alert_v2_Desktop.jpg" alt="downtown houston" />
+            <p class="text">Don't Get Scammed!⚠️<br />Recent toll road scam texts circulating
+                <br />
+                are not from Harris County
+                Toll Road Authority
+                nor TxTag.<button class="yllwbtn">LEARN MORE</button>
+            </p>
+        </div>
+        <div class="mySlides slide">
+            <img id="slides" src="images/EZTAG_Satellitestore.webp" alt="downtown houston" />
+            <p class="text">We’ve added a new EZ TAG <br /> Satellite Store location to give more<br /> options to our
+                customers in
+                Pasadena<button class="yllwbtn">SEE LOCATIONS</button></p>
+        </div>
+        <div class="mySlides slide">
+            <img id="slides" src="images/EZTAG_Hiring.png" alt="downtown houston" />
+            <p class="text">We're Hiring<button class="yllwbtn">LEARN MORE</button></p>
+        </div>
+        <div class="mySlides slide">
+            <img id="slides" src="images/EZTAG-Easy.png" alt="downtown houston" />
+            <p class="text">EZ TAG.<br /> Easier to get and use<button class="yllwbtn">LEARN MORE</button></p>
+        </div>
+        <div class="mySlides slide">
+            <img id="slides" src="images/EZTollpay.png" alt="downtown houston" />
+            <p class="text">EZ Tollpay<br />HCTRA toll road drivers can now pay with Cash at Walmart, H-E-B, and many
+                more
+                locations.<button class="yllwbtn">WHERE IT WORKS</button></p>
+        </div>
+        <div class="mySlides slide">
+            <img id="slides" src="images/EZHardy.jpg" alt="downtown houston" />
+            <p class="text">See the Vision of the Hardy<br />Downtown connector<button class="yllwbtn">LEARN
+                    MORE</button>
+            </p>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <main>
+        <div class="miscMenu">
+            <button class="miscbtn">Sign Up for an EZ TAG</button>
+            <button class="miscbtn">Pay Tolls & Invoices</button>
+            <button class="miscbtn">Welcome TxTag Customers</button>
+            <button class="miscbtn">How to mount your EZ TAG</button>
+        </div>
+
+        <h1 style="text-align: center;">SEE WHAT'S HAPPENING</h1>
+        <h3 id="text" style="text-align: center;">HCTRA's latest news, updates, and alerts.</h3>
+        <a style="display: flex; justify-content: center;" href="#">View all</a>
+        <br />
+        <div class="cards">
+            <div class="card">
+                <img src="images/EZToll.png" alt="tollpay" />
+                <h5>OTHER</h5>
+                <p>Toll Rate Increase on the Brazoria County 288 Expressway (greed)</p>
+            </div>
+            <div class="card">
+                <img src="images/EZToll.png" alt="tollpay" />
+                <h5>AGENCY UPDATES</h5>
+                <p>HCTRA Connectivity Reaches Colorado</p>
+            </div>
+            <div class="card">
+                <img src="images/EZToll.png" alt="tollpay" />
+                <h5>AGENCY UPDATES</h5>
+                <p>HCTRA Cautions Customers for phishing scams</p>
+            </div>
+        </div>
+
+        <h2 style="text-align: center;">WE'RE HERE TO HELP <br />
+            The answers you need right at your fingertips</h2>
+        <section>
+            <div id="cardTwo">
+                <img src="images/EZTAG-Customer.jpg" alt="customer service" width="325" height="400" />
+                <p>CUSTOMER SERVICE</p>
+                <br />
+                <p>HCTRA 'cares' about your comments & concerns.</p>
+                <button class="yllwbtn">CONTACT US</button>
+            </div>
+            <div id="cardTwo">
+                <img src="images/EZ-Traveltool.jpg" alt="Travel tools" width="325" height="400" />
+                <p>TRAVEL TOOLS</p>
+                <br />
+                <p>Find answers to the most frequently asked questions.</p>
+                <button class="yllwbtn">LEARN MORE</button>
+            </div>
+            <div id="cardTwo">
+                <img src="images/EZTRoadside.jpg" alt="Rdside asst" width="325" height="400" />
+                <p>ROADSIDE ASSISTANCE</p>
+                <br />
+                <p>Need help on the tollways?</p>
+                <button class="yllwbtn">GET HELP</button>
+            </div>
+        </section>
+
+        <div id="academy">
+            <img style="width: 100vw" src="images/EZTAG-Acad.jpg" alt="Academy" height="650" />
+            <h2 class="imgtext">THE ROAD TO OPPORTUNITY IS <br />HERE</h2>
+        </div>
+    </main>
+
+
+</body>
+
+</html>

@@ -9,100 +9,103 @@
         My Dream Vacation
     </title>
     <link href="styles.css" rel="stylesheet" />
+    <link href="vacation.css" rel="stylesheet" />
 </head>
 
 <body>
-    <button class="menubtn" onclick="openNav()">menu</button>
+
     <heading>
+        <button class="menubtn" onclick="openNav()">menu</button>
         <h2>Treat yourself to...</h2><br />
-        <h1><em>-Fukuoka-</em></h1>
+        <h1 id="titletext"><strong><em>-Fukuoka-</em></strong></h1>
     </heading>
 
-
-    <h5><ins>A city beyond the standards...</ins></h5>
-    <br />
-    <span id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="fav-lists.html">Favorites List</a>
-        <hr />
-        <a href="image-page.html">Funniest Images</a>
-        <hr />
-        <a href="tables.html">My Schedule</a>
-        <hr />
-        <a href="contact-survey.html">Give Feedback</a>
-        <hr />
-        <a href="vacation.html">My Dream Vacation</a>
-        <hr />
-        <a href="Wishlist.html">My Wishlist</a>
-        <hr />
-        <a href="index.html">Home</a>
-        <hr />
-    </span>
-    <!-- Use any element to open the sidenav -->
-
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
+    <main>
+        <h5><ins>A city beyond the standards...</ins></h5>
+        <br />
+        <span id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="fav-lists.html">Favorites List</a>
+            <hr />
+            <a href="image-page.html">Funniest Images</a>
+            <hr />
+            <a href="tables.html">My Schedule</a>
+            <hr />
+            <a href="contact-survey.html">Give Feedback</a>
+            <hr />
+            <a href="vacation.html">My Dream Vacation</a>
+            <hr />
+            <a href="Wishlist.html">My Wishlist</a>
+            <hr />
+            <a href="index.html">Home</a>
+            <hr />
+        </span>
+        <!-- Use any element to open the sidenav -->
 
 
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100vw";
+            }
 
-    <p>Treat yourself to famously-good food, a hello kitty bullet train, and Canal City Hakata, the city within a city!
-    </p>
-    <br />
-
-    <div class="mySlides fade">
-        <div class="numbertext">1/4</div>
-        <img src="images/hello-kitty-shinkansen.PNG" alt="inside of hello kitty bullet train" width="500"
-            height="400" />
-        <section class="text"> The Hello Kitty Shinkansen takes you from Osaka to Fukuoka!</section>
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">2/4</div>
-        <img style="align: center" src="images/Canal_city_hakata.PNG" alt="Fukuoka's Canal City in Hakata" width="500"
-            height="400" />
-        <section class="text">Fukuoka's largest and most eye-catching shopping center - Canal City Hakata!</section>
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">3/4</div>
-        <img src="images/yatai.jpg" alt="Yatai street food scene in fukuoka" width="500" height="400" />
-        <section class="text">Pictured here, is the yatai street food scene in Hakata city.</section>
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">4/4</div>
-        <video src="videos/fukuoka-walkwithme.mp4" controls loop>
-        </video>
-        <section class="text">A short walking tour of Fukuoka's city streets</section>
-    </div>
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentslide(4)"></span>
-    </div>
-    </div>
-    <h3>Looking to visit? Don't get lost!</h3>
-    <p>Directions to Canal City Shopping Center:</p>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.6008680607492!2d130.40942430527963!3d33.589710936111025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354191958981c361%3A0xe0edba177a7419d1!2sCANAL%20CITY%20HAKATA!5e0!3m2!1sen!2sus!4v1759256487811!5m2!1sen!2sus"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <h3>Take the Kitty Train!</h3>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3323.611684710462!2d130.41845042095164!3d33.58943016736398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shello%20kitty%20shinkansen!5e0!3m2!1sen!2sus!4v1759256943710!5m2!1sen!2sus"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0vw";
+            }
+        </script>
 
 
+
+        <p>Treat yourself to famously-good food, a hello kitty bullet train, and Canal City Hakata, the city within a
+            city!
+        </p>
+        <br />
+
+        <div class="mySlides fade">
+            <div class="numbertext">1/4</div>
+            <img src="images/hello-kitty-shinkansen.PNG" alt="inside of hello kitty bullet train" width="500"
+                height="400" />
+            <section class="text"> The Hello Kitty Shinkansen takes you from Osaka to Fukuoka!</section>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2/4</div>
+            <img style="display: flex" src="images/Canal_city_hakata.PNG" alt="Fukuoka's Canal City in Hakata"
+                width="500" height="400" />
+            <section class="text">Fukuoka's largest and most eye-catching shopping center - Canal City Hakata!</section>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3/4</div>
+            <img src="images/yatai.jpg" alt="Yatai street food scene in fukuoka" width="500" height="400" />
+            <section class="text">Pictured here, is the yatai street food scene in Hakata city.</section>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4/4</div>
+            <video src="videos/fukuoka-walkwithme.mp4" controls loop>
+            </video>
+            <section class="text">A short walking tour of Fukuoka's city streets</section>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentslide(4)"></span>
+        </div>
+        </div>
+        <h3>Looking to visit? Don't get lost!</h3>
+        <p>Directions to Canal City Shopping Center:</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.6008680607492!2d130.40942430527963!3d33.589710936111025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354191958981c361%3A0xe0edba177a7419d1!2sCANAL%20CITY%20HAKATA!5e0!3m2!1sen!2sus!4v1759256487811!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h3>Take the Kitty Train!</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3323.611684710462!2d130.41845042095164!3d33.58943016736398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shello%20kitty%20shinkansen!5e0!3m2!1sen!2sus!4v1759256943710!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </main>
 </body>
 
 <script>

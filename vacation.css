@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main,
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    font-family: "Michroma", sans-serif;
+    font-weight: normal;
+    background-color: rgb(233, 231, 238);
+    color: rgb(84, 68, 193);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 5.652rem;
+    90.4px
+}
+
+h2 {
+    font-size: 3.997rem;
+    /* 64px*/
+}
+
+h3 {
+    font-size: 2.5rem;
+    /* 45.28px */
+}
+
+h4 {
+    font-size: 1.999rem;
+    /* 32px*/
+}
+
+h5 {
+    font-size: 1.414rem;
+    /* 22.56px */
+}
+
+small {
+    font-size: 0.707rem;
+    /* 11.36px*/
+}

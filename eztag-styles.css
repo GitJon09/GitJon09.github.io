@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+
+nav {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: start;
+    margin-left: 10px;
+}
+
+.menubtn {
+    height: 100px;
+    width: 100px;
+    margin-left: 30px;
+    padding-top: 50px;
+}
+
+#navbar {
+    display: flex;
+    padding-left: 20%;
+    margin-right: 400px;
+    justify-content: space-between;
+}
+
+body {
+    font-family: Readex Pro;
+    color: rgb(59, 4, 110);
+}
+
+#page:hover {
+    cursor: pointer;
+    background-color: rgb(128, 126, 136)
+}
+
+#eztag-logo,
+a {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+p {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#slides {
+    width: 100vw
+}
+
+/* Slideshow container 
+.slideshow-container {
+    margin: none;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+}*/
+
+/* Hide the images by default */
+.mySlides {
+    display: flex;
+    align-items: start;
+    position: sticky;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    position: fixed;
+    top: 20%;
+    height: 50px;
+    padding: 16px;
+    margin-left: 15px;
+    color: rgb(72, 70, 80);
+    font-weight: 100;
+    font-size: 50px;
+    transition: 0.2s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    margin-left: 95vw;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(168, 143, 143, 0.342);
+    border-radius: 35px;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 25px;
+    font-family: Readex Pro;
+    padding: 8px 12px;
+    margin-left: 20px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    display: flex;
+
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 90px;
+    margin: 0 2px;
+    background-color: #e7e7e7;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #ffde20c4;
+}
+
+/* Fading animation */
+.slide {
+    animation-name: slide;
+    animation-duration: 0.5s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%)
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/*sidenav*/
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    margin-left: 0;
+    background-color: rgb(243, 243, 243);
+    /*border: 2px solid, rgb(78, 224, 188);*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 50px;
+    /* Place content 60px from the top */
+    transition: 0.2s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav a {
+    padding: 4px 4px 4px 16px;
+    text-decoration: wavy;
+    font-size: 25px;
+    color: rgb(59, 4, 110) display: flex;
+    transition: 0.2s;
+}
+
+.sidenav a:hover {
+    background-color: rgb(78, 76, 85) transition: .3s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    color: blueviolet;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    font-size: 36px;
+    margin-left: 50px;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.yllwbtn {
+    font-family: Readex Pro;
+    color: rgb(59, 4, 110);
+    padding: 15px;
+    background-color: rgb(255, 214, 30);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.miscMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+
+.miscbtn {
+    font-family: Readex Pro;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #ffffff;
+    width: 50vw;
+    height: 80px;
+    color: rgb(59, 4, 110);
+    display: flex;
+    align-items: end;
+    cursor: pointer;
+}
+
+.miscbtn:hover {
+    height: 100px;
+    margin-right: 5vw;
+    box-shadow: rgba(0, 0, 0, 0.664);
+    transition: 0.3s ease;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.card {
+    height: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 300px;
+}
+
+.cardtext {
+    font-family: Readex Pro;
+    background-color: rgba(173, 171, 180, 0.486);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#cardTwo {
+    padding-bottom: 30px;
+}
+
+#academy {
+    display: contents;
+}
+
+.imgtext {
+    color: rgb(59, 4, 110) font-size: 25px;
+    font-family: Readex Pro;
+    padding: 8px 12px;
+    margin-left: 20px;
+    bottom: 8px;
+    width: 100%;
+    display: flex;
+}
